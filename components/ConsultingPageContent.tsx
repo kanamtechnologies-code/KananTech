@@ -160,15 +160,6 @@ export default function ConsultingPageContent() {
 
             <CtaRow className="mb-6" />
 
-            <div className="flex flex-wrap gap-3 text-sm text-secondary-text">
-              {["Fixed scope sprints", "Clear deliverables", "Retainer-ready support"].map((t) => (
-                <span key={t} className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-section-bg border border-border">
-                  <CheckCircle2 size={16} className="text-emerald-primary" />
-                  {t}
-                </span>
-              ))}
-            </div>
-
             <div className="mt-6">
               <Link
                 href="/work"

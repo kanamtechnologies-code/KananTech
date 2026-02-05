@@ -13,7 +13,6 @@ const navLinks = [
   { label: "Learning", href: "/learning" },
   { label: "Lab", href: "/lab" },
   { label: "Work", href: "/work" },
-  { label: "Sandbox", href: "/sandbox" },
   { label: "FAQ", href: "#faq" },
   { label: "Contact", href: "#contact" },
 ];
@@ -100,15 +99,6 @@ export default function Header() {
                 >
                   {link.label}
                 </button>
-              ) : link.href === "/sandbox" ? (
-                <Link
-                  key={link.href}
-                  href={link.href}
-                  className="relative px-3 py-1.5 text-sm font-semibold text-emerald-primary bg-emerald-tint rounded-lg border border-emerald-primary/30 hover:bg-emerald-primary/10 hover:border-emerald-primary/50 transition-all"
-                >
-                  {link.label}
-                  <span className="absolute -top-1 -right-1 w-2 h-2 bg-gold-500 rounded-full animate-pulse" />
-                </Link>
               ) : (
                 <Link
                   key={link.href}
@@ -156,15 +146,6 @@ export default function Header() {
                   >
                     {link.label}
                   </button>
-                ) : link.href === "/sandbox" ? (
-                  <Link
-                    key={link.href}
-                    href={link.href}
-                    className="relative text-left px-3 py-2 text-sm font-semibold text-emerald-primary bg-emerald-tint rounded-lg border border-emerald-primary/30 hover:bg-emerald-primary/10 hover:border-emerald-primary/50 transition-all"
-                  >
-                    {link.label}
-                    <span className="absolute -top-1 -right-1 w-2 h-2 bg-gold-500 rounded-full animate-pulse" />
-                  </Link>
                 ) : (
                   <Link
                     key={link.href}

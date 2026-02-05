@@ -72,11 +72,6 @@ export const siteMap: {
       description: "Start the IT track with A+ hardware basics.",
     },
     {
-      label: "Sandbox",
-      href: "/sandbox",
-      description: "Interactive demos of Kanam’s approach to systems and UI.",
-    },
-    {
       label: "Credentials",
       href: "/credentials",
       description: "Credentials & certifications page.",

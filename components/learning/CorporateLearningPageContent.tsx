@@ -18,8 +18,6 @@ import {
 import { usePrefersReducedMotion } from "@/hooks/usePrefersReducedMotion";
 import FAQSection, { FAQItem } from "@/components/FAQSection";
 
-const trustChips = ["Human-led sessions", "Hands-on practice", "Built for busy teams"] as const;
-
 const whyBullets = [
   "Live instruction + Q&A (no passive video-only learning)",
   "Industry-certified instructors",
@@ -245,17 +243,6 @@ export default function CorporateLearningPageContent() {
                 <p className="text-lg sm:text-xl text-secondary-text mb-6 text-balance">
                   Practical training for working professionals—built for immediate application. We teach AI as a productivity tool (used responsibly) alongside the fundamentals teams need for reporting, automation, and support.
                 </p>
-
-                <div className="flex flex-wrap gap-2 mb-7">
-                  {trustChips.map((chip) => (
-                    <span
-                      key={chip}
-                      className="inline-flex items-center px-3 py-1.5 rounded-full bg-white/70 backdrop-blur-sm border border-border text-sm text-secondary-text"
-                    >
-                      {chip}
-                    </span>
-                  ))}
-                </div>
 
                 <HeroCtas />
                 <div className="mt-6">

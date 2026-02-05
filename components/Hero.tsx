@@ -1,13 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowRight, CheckCircle2 } from "lucide-react";
-
-const trustChips = [
-  { text: "2–4 week delivery" },
-  { text: "Fixed scope" },
-  { text: "Retainer-ready support" },
-];
+import { ArrowRight } from "lucide-react";
 
 export default function Hero() {
   const scrollToSection = (href: string) => {
@@ -47,26 +41,6 @@ export default function Hero() {
               <ArrowRight size={18} />
             </a>
           </div>
-
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.3, duration: 0.6 }}
-            className="flex flex-wrap justify-center gap-4 sm:gap-6"
-          >
-            {trustChips.map((chip, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, scale: 0.9 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ delay: 0.4 + index * 0.1 }}
-                className="flex items-center gap-2 text-sm text-secondary-text bg-white px-4 py-2 rounded-full border border-border shadow-sm"
-              >
-                <CheckCircle2 size={16} className="text-emerald-primary" />
-                <span>{chip.text}</span>
-              </motion.div>
-            ))}
-          </motion.div>
         </motion.div>
       </div>
     </section>
