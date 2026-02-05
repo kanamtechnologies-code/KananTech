@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #0F172A;
+  --section-bg: #F8FAFC;
+  --card-bg: #FFFFFF;
+  --border: #E2E8F0;
+  --primary-text: #0F172A;
+  --secondary-text: #334155;
+  --muted-text: #64748B;
+  
+  /* Emerald (Primary Accent) */
+  --emerald-primary: #059669;
+  --emerald-hover: #047857;
+  --emerald-dark: #065F46;
+  --emerald-tint: #D1FAE5;
+  
+  /* Gold (Secondary Accent - Use Sparingly) */
+  --gold-primary: #D4AF37;
+  --gold-hover: #B9922E;
+  --gold-dark: #8A6F1A;
+  --gold-tint: #FFFBEB;
+}
+
+body {
+  color: var(--foreground);
+  background: transparent;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+  background: var(--background);
+}
+
+/* Focus styles for accessibility */
+*:focus-visible {
+  outline: 2px solid #059669;
+  outline-offset: 2px;
+}
+
