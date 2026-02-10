@@ -67,7 +67,7 @@ function InterestCtas({ topic }: { topic: string }) {
 export default function PersonalLearningPageContent() {
   return (
     <div className="pt-32 pb-10 px-4 sm:px-6 lg:px-8">
-      <div className="container mx-auto max-w-6xl">
+      <div className="mx-auto w-full">
         {/* Hero */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}

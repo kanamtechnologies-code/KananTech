@@ -36,7 +36,7 @@ export default function FAQ() {
 
   return (
     <section id="faq" className="py-20 px-4 sm:px-6 lg:px-8 bg-section-bg">
-      <div className="container mx-auto max-w-3xl">
+      <div className="mx-auto w-full">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}

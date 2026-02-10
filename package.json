@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "WATCHPACK_POLLING=true WATCHPACK_POLLING_INTERVAL=1000 CHOKIDAR_USEPOLLING=true next dev",
+    "dev": "node scripts/check-dev-port.mjs && WATCHPACK_POLLING=true WATCHPACK_POLLING_INTERVAL=1000 CHOKIDAR_USEPOLLING=true next dev -p 3000",
     "dev:clean": "rm -rf .next && npm run dev",
     "build": "next build",
     "start": "next start",

@@ -18,7 +18,7 @@ export default function Footer() {
 
   return (
     <footer className="bg-primary-text text-slate-300 py-12 px-4 sm:px-6 lg:px-8">
-      <div className="container mx-auto max-w-6xl">
+      <div className="mx-auto w-full">
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           <div>
             <h3 className="text-white font-semibold text-lg mb-2">Kanam Technologies</h3>

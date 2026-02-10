@@ -13,7 +13,7 @@ export default function Hero() {
 
   return (
     <section className="relative pt-32 pb-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
-      <div className="container mx-auto max-w-4xl relative z-10">
+      <div className="mx-auto w-full relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
